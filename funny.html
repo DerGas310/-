@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(•ω•)</title>
+    <title>Музей ГЭС</title>
     <link rel="stylesheet" href="ff.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,13 +56,13 @@
                 </div>
                 <div class="fact">
                     <span class="fh">Факт №4</span>
-                    <span class="fh">Первая ГЭС</span>
-                    <span class="fb">Первая промышленная гидроэлектростанция «ГЭС Адамса» была построена в 1895 году в Ниагара-Фолс, США и вырабатывала 3.3МВт.</span>
+                    <span class="fh">Не только электричество</span>
+                    <span class="fb">Благодаря водохранилищам гидроэлектростанций, на поля и в города поступает вода, а климат становится мягче. </span>
                 </div>
                 <div class="fact">
                     <span class="fh">Факт №5</span>
-                    <span class="fh">ГЭС меняют климат</span>
-                    <span class="fb">Водохранилища крупных ГЭС настолько огромны, что меняют климат в радиусе сотен километров.</span>
+                    <span class="fh">16% энергии</span>
+                    <span class="fb">ГЭС покрывают 16% всей мировой энергии, при этом не загрязняя планету. ГЭС используют воду — неисчерпаемый источник энергии.</span>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
         <div class="pods">
             <h1>Принцип работы.</h1>
             <div class="skebob52">
-                <img src="ds.jpg" alt="" class="imagezazu">
+                <img src="ges.png" alt="" class="imagezazu">
                 <div class="pididi">
                     <div class="accordion">
                         <button class="accordion-header">Водохранилище</button>
@@ -148,18 +148,111 @@
             <span class="facthist">В 2026 году, 20% от общей установленной мощности всей энергосистемы России составляют ГЭС <br>В стране действует 15 гидроэлектростанций мощностью свыше 1000 МВт</span>
         </div>
     </section>
+    
+    <section>
+        <div class="pods">
+            <h1>Самые мощные ГЭС России.</h1>
+            <table class="ges-table">
+                <thead>
+                    <tr class="fdfdf">
+                        <th>Название ГЭС</th>
+                        <th>Мощность (МВт)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a data-img="1">Саяно-Шушенская ГЭС</a></td>
+                        <td class="power-val">6 400</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="2">Красноярская ГЭС</a></td>
+                        <td class="power-val">6 000</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="3">Братская ГЭС</a></td>
+                        <td class="power-val">4 500</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="4">Усть-Илимская ГЭС</a></td>
+                        <td class="power-val">3 840</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="5">Богучанская ГЭС</a></td>
+                        <td class="power-val">2 997</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="6">Волжская ГЭС</a></td>
+                        <td class="power-val">2 734</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="7">Жигулевская ГЭС</a></td>
+                        <td class="power-val">2 488</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="8">Бурейская ГЭС</a></td>
+                        <td class="power-val">2 010</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="9">Саратовская ГЭС</a></td>
+                        <td class="power-val">1 493</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="10">Чебоксарская ГЭС</a></td>
+                        <td class="power-val">1 370</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="11">Зейская ГЭС</a></td>
+                        <td class="power-val">1 330</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="12">Нижнекамская ГЭС</a></td>
+                        <td class="power-val">1 205</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="13">Загорская ГАЭС</a></td>
+                        <td class="power-val">1 200</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="14">Воткинская ГЭС</a></td>
+                        <td class="power-val">1 115</td>
+                    </tr>
+                    <tr>
+                        <td><a data-img="15">Чиркейская ГЭС</a></td>
+                        <td class="power-val">1 000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <span class="facthist">*Мощностость, требуемая, чтобы запитать одну лампочку - <div style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; line-height: 2;">
+  <span style="border-bottom: 1.5px solid;">1</span>
+  <span>100000</span>
+</div> МВт</span>
+        </div>
+        <div id="modal" class="modal-overlay" onclick="this.style.display='none'">
+    <img id="modal-img" src="" alt="ГЭС">
+</div>
+    </section>
 
     <section>
         <div class="pods">
             <h1>Трансляция с ГЭС.</h1>
             <div class="strim">
                 <div id="twitch-embed"></div>
-                <p>нажмите esc для выхода</p>
             </div>
         </div>
     </section>
 
-    <script>
+    <section class="rm">
+        <div class="pods">
+            <h1>Зайдите с вашего телефона.</h1>
+            <div class="qr">
+                <img src="qr.png" width="560" height="560">
+            </div>
+        </div>
+    </section>
+
+<script>
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || true;
 const carousel = document.querySelector('.carousel');
 const track = document.querySelector('.track');
 const gap = 20;
@@ -227,61 +320,97 @@ window.addEventListener('resize', () => {
 });
 </script>
     
-    <script>
-const cards = document.querySelectorAll('.fact');
+<script>
+if (!isTouchDevice) {
+    const cards = document.querySelectorAll('.fact');
 
-cards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        card.style.setProperty('--mouse-x', `${x}px`);
-        card.style.setProperty('--mouse-y', `${y}px`);
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
 
 
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
 
-        const rotateX = ((y - centerY) / centerY) * 15;
-        const rotateY = ((centerX - x) / centerX) * 15;
+            const rotateX = ((y - centerY) / centerY) * 15;
+            const rotateY = ((centerX - x) / centerX) * 15;
 
-        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+            card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+        });
     });
+}
+</script>
+<script>
+if (!isTouchDevice) {
+    document.querySelectorAll('.ges-table a').forEach(link => {
+        link.style.cursor = 'pointer';
+        
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const imgNumber = this.getAttribute('data-img');
+            const modal = document.getElementById('modal');
+            const fullImg = document.getElementById('modal-img');
+            
+            fullImg.src = `dodo pizza/${imgNumber}.jpg`; 
+            modal.style.display = 'flex';
+        });
+    });
+}
+</script>
+<script>
+document.querySelectorAll('.accordion-header').forEach(button => {
+button.addEventListener('click', () => {
+    document.querySelectorAll('.accordion-header').forEach(otherButton => {
+    if (otherButton !== button) {
+        otherButton.classList.remove('active');
+        const otherContent = otherButton.nextElementSibling;
+        if (otherContent.classList.contains('show')) {
+        otherContent.classList.remove('show');
+        }
+    }
+});
+button.classList.toggle('active');
+const content = button.nextElementSibling;
+content.classList.toggle('show');
+});
+});
+</script>
+<script>
+document.querySelectorAll('.ges-table a').forEach(link => {
+    link.style.cursor = 'pointer';
 
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const imgNumber = this.getAttribute('data-img');
+        const photoImg = document.getElementById('ges-photo');
+        
+        photoImg.src = `dodo pizza/${imgNumber}.jpg`; 
+        photoImg.style.display = 'block';
+    
+        photoImg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
 });
-    </script>
-    <script>
-  document.querySelectorAll('.accordion-header').forEach(button => {
-    button.addEventListener('click', () => {
-      document.querySelectorAll('.accordion-header').forEach(otherButton => {
-        if (otherButton !== button) {
-          otherButton.classList.remove('active');
-          const otherContent = otherButton.nextElementSibling;
-          if (otherContent.classList.contains('show')) {
-            otherContent.classList.remove('show');
-          }
-        }
-      });
-      button.classList.toggle('active');
-      const content = button.nextElementSibling;
-      content.classList.toggle('show');
-    });
-  });
 </script>
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-                <script type="text/javascript">
-                    new Twitch.Embed("twitch-embed", {
-                        width: 889,
-                        height: 500,
-                        channel: "stintik",
-                        layout: "video",
-                        muted: true,
-                        autoplay: true,
-                        tt_content_lang: "ru"
-                    });
-    </script>
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script type="text/javascript">
+                new Twitch.Embed("twitch-embed", {
+                    width: 889,
+                    height: 500,
+                    channel: "buster",
+                    layout: "video",
+                    muted: true,
+                    autoplay: true,
+                    tt_content_lang: "ru"
+                });
+</script>
 </body>
 </html>
