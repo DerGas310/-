@@ -181,7 +181,7 @@ img.start{
 }
 
 section {
-    min-height: 100vh;
+    height: 100vh;
     width: 90vw;
     scroll-snap-align: start;
     scroll-snap-stop: always; 
@@ -192,14 +192,16 @@ section {
     flex-direction: column;
     display: flex;
     align-items: flex-start;
+    height: 100%;
 }
 
 .pods2{
     margin-top: 6.7vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    height: 100%;
 }
 
 .fact{
@@ -207,7 +209,8 @@ section {
     padding: 30px;
     flex-shrink: 0;
     width: 270px;
-    height: 210px;
+    height: auto;
+    min-height: 160px;
     margin: 30px;
     background: #a1fffc;
     border-radius: 20px;
@@ -270,8 +273,10 @@ section {
     position: absolute;
     background: linear-gradient(var(--rotgrad), var(--color-1), var(--color-2));
     filter: blur(10px);
-    width: 280px;
-    height: 220px;
+    top: -35px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px; 
     padding: 25px;
     z-index: -1;
     opacity: 1;
@@ -286,6 +291,8 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: stretch; 
+    height: 80%;
 }
 
 .fh{
@@ -306,9 +313,19 @@ section {
 }
 
 .imagezazu{
-    width: 950px;
+    max-width: 70%;
+    max-height: 90%;
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(86, 86, 86);
+}
+
+@media (aspect-ratio: 16/9) and (display-mode: fullscreen) {
+    .imagezazu{
+        max-width: 80%;
+        max-height: 90%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgb(86, 86, 86);
+    }
 }
 
 .pididi{
@@ -382,6 +399,7 @@ iframe{
     overflow-y: auto;
     z-index: 3;
     border-color: rgba(0,0,0,0);
+    height: 50%;
 }
 
 .hists::-webkit-scrollbar{
@@ -394,7 +412,7 @@ iframe{
 }
 
 .facthist{
-    margin-top: 60px;
+    margin-bottom: 12vh;
 }
 
 .ges-table *{
@@ -436,12 +454,8 @@ thead{
     background-color: #f8f9fa;
     transition: all 0.8s;
 }
-.ges-table tr:hover {
+tbody tr:hover {
     background-color: #e9ecef;
-    color: black;
-    transition: all 0.2s;
-}
-.ges-table tr:hover *{
     color: black;
     transition: all 0.2s;
 }
